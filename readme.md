@@ -15,6 +15,9 @@
 <ul>
 	<li>HTML 5</li>
 	<li>CSS 3</li>
+	<li>LESS</li>
+	<li>JavaScript</li>
+	<li>jQuery</li>
 	<li>PHP 5.4</li>
 	<li>MySQL</li>
 	<li>Responsive Web Design</li>
