@@ -6,7 +6,12 @@
 <html lang="pl">
 	<head>
 		<meta charset="utf-8">
+		<meta name="robots" content="all">
+		<meta name="author" content="Dawid Rodzyn Tomas">
+		<meta name="description" content="Inwentarz sprzętu komputerowego to aplikacja webowa która umożliwia sprawdzenie parametrów komputera bez jego fizycznej obecności. Aplikcja na pewno będzie przydatna w szkoła i urzędach">
+
 		<title>Inwentarz sprzętu komputerowego</title>
+
         <link rel="stylesheet" type="text/css" href="css/powiadomienia.css">
 		<link rel="stylesheet" type="text/css" href="css/logowanie.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
