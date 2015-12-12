@@ -109,6 +109,16 @@ body p.dane-karta-graficzna {
 body p.dane-dysk {
   text-shadow: 0px 1px 1px #CEC6C6;
 }
+body #konto .dane-osobowe p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 35px;
+}
+body #konto .admin-inwentarza p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 28px;
+}
 body .informacje-o-projekcie {
   background-color: #ffffff;
   padding-bottom: 15px;

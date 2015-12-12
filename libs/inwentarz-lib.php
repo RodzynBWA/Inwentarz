@@ -13,7 +13,7 @@ class Inwentarz {
             $haslo = $_POST['haslo'];
             $haslo = md5($haslo);
             if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                $sprawdzanie = "SELECT * FROM uzytkownicy WHERE login = '$login' AND haslo = '$haslo'  LIMIT 1";
+                $sprawdzanie = "SELECT * FROM uzytkownicy WHERE login = '$login' AND haslo = '$haslo' LIMIT 1 ";
                 $logowanie = mysqli_query($polaczenie, $sprawdzanie);
                 $user_id = mysqli_fetch_assoc($logowanie);
                 if($user_id == 0) {
@@ -26,6 +26,10 @@ class Inwentarz {
                 } else {
                     $_SESSION['uzytkownik_id'] = $user_id['id'];
                     $_SESSION['zalogowany'] = true;
+                    $id = $user_id['id'];
+                    $aktualny_czas_query = "UPDATE `Inwentarz`.`uzytkownicy` SET `last_logged` = NOW() WHERE `uzytkownicy`.`id` = '$id'";
+                    $zalogowany_czas = mysqli_query($polaczenie, $aktualny_czas_query);
+
                     header("refresh:3; url=panel.php");
 
                     echo '<div class="containera">
@@ -62,12 +66,33 @@ class Inwentarz {
             echo 'Użytkownik';
         }
     }
+
+    public function admin_inwentarza() {
+        $id_admina_inwentarza = 0;
+
+        require('dbconnect.php');
+        $admin_prowadzacy = "SELECT * FROM `ustawienia`";
+        $admin = $polaczenie->query($admin_prowadzacy);
+        while($id_admina = $admin->fetch_assoc()) {
+            $id_admina_inwentarza = $id_admina['uzytkownik_admin'];
+        }
+
+        $nazwa_admina = $this->daneZalogowanego($id_admina_inwentarza);
+            echo $nazwa_admina['imie'].' '.$nazwa_admina['nazwisko'];
+        $polaczenie->close();
+    }
+
     public function wyloguj() {
         if($_GET['id'] == 'wyloguj')
         {
             session_start();
             unset($_SESSION['zalogowany']);
             unset($_SESSION['uzytkownik_id']);
+
+            require('dbconnect.php');
+            $update_logowania = "UPDATE uzytkownicy SET `pre_last_logged`= `last_logged`";
+            $wykonaj = mysqli_query($polaczenie, $update_logowania);
+
             session_destroy();
             header("Location: http://".$_SERVER['HTTP_HOST']."".dirname($_SERVER['PHP_SELF'])."/index.php");
         }
