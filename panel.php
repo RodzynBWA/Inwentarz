@@ -11,6 +11,7 @@
                 <?php $pracownie->listaPracowni(); ?>
             </div>
         </div>
+        <?php $admin->Sprawdz(); ?>
     </acticle>
     <?php include_once('footer.php');?>
     </body>

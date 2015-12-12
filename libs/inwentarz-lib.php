@@ -50,10 +50,13 @@ class Inwentarz {
         $polaczenie->close();
     }
     public function rolaUsera() {
+        ob_start();
+        session_start();
         require('dbconnect.php');
         $inwentarz = new Inwentarz();
         $rola = $inwentarz->daneZalogowanego();
         if($rola['id'] == 1) {
+            $_SESSION['admin'] = 1;
             echo 'Administrator';
         } else {
             echo 'Użytkownik';

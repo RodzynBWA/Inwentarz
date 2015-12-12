@@ -1,17 +1,19 @@
 <?php
-require_once('libs/inwentarz-lib.php');
-require_once('libs/pracownie-lib.php');
-require_once('libs/stanowisko-lib.php');
-$inwentarz = new Inwentarz();
-$pracownie = new Pracownie();
-$stanowisko = new Stanowisko();
+    require_once('libs/inwentarz-lib.php');
+    require_once('libs/pracownie-lib.php');
+    require_once('libs/stanowisko-lib.php');
+    require_once('admin/admin.php');
+    $inwentarz = new Inwentarz();
+    $pracownie = new Pracownie();
+    $stanowisko = new Stanowisko();
+    $admin = new Admin();
 
-session_start();
-if(isset($_SESSION['zalogowany']) != "1") {
-    header("Location: index.php");
-}
+    session_start();
+    if(isset($_SESSION['zalogowany']) != "1") {
+        header("Location: index.php");
+    }
 
-$dane_usera = $inwentarz->daneZalogowanego();
+    $dane_usera = $inwentarz->daneZalogowanego();
 ?>
 <!docType HTML>
 <html>
