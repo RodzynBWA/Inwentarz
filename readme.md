@@ -24,9 +24,9 @@
 <h2>Aplikacja w trakcie tworzenia!</h2>
 <h2>To Do List: </h2>
 <ul>
-	<li>Podgląd poszegółnych stanowisk w pracowniach</li>
-	<li>Podgląd podzespołów komputerowych<li>
+	<li>Podgląd podzespołów komputerowych</li>
 	<li>Panel zarządzania dla administratora</li>
+	<li>Logi systemu - kto, kiedy, co zrobił</li>
 	<li>Zabezepieczenie aplikacji w wrażliwych miejscach</li>
 </ul>
 <h2>Wersja: 0.41</h2>
