@@ -112,7 +112,7 @@
             <div class="col-md-4">
                 <div class="to-do-list kafelek morski">
                     <a href="#">
-                        <p>Lista nadchodzących zmian</p>
+                        <p>Statystyki</p>
                     </a>
                 </div>
             </div>
