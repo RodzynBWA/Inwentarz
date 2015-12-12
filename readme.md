@@ -29,11 +29,12 @@
 	<li>Panel zarządzania dla administratora</li>
 	<li>Zabezepieczenie aplikacji w wrażliwych miejscach</li>
 </ul>
-<h2>Wersja: 0.41/h2>
+<h2>Wersja: 0.41</h2>
 <h2>Podgląd online: <a href="http://rodzyn.pl/Inwentarz">Kliknij tutaj!</a></h2>
 <h2>Logowanie:</h2>
 <h3>Login: demo</h3>
 <h3>Hasło: demo</h3>
+<hr>
 <img src="https://raw.githubusercontent.com/RodzynBWA/Inwentarz/master/screenshots/screenshot1.png">
 <hr>
 <h2>Autor: Dawid <a href="http://rodzyn.pl" target="_blank">Rodzyn</a> Tomas</h2>
