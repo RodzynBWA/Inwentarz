@@ -126,5 +126,17 @@ class Inwentarz {
         return mysqli_fetch_assoc($pobierz_info);
         $polaczenie->close();
     }
+
+    public function changelog() {
+        require('dbconnect.php');
+        $data = $polaczenie->query('SELECT * FROM changelog');
+
+        $changes = [];
+        foreach ($data as $row) {
+            $changes[$row['wersja']][] = $row;
+        }
+
+        print_r($changes['0.1']);
+    }
 }
 ?>
