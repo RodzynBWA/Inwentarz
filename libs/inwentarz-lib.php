@@ -136,7 +136,23 @@ class Inwentarz {
             $changes[$row['wersja']][] = $row;
         }
 
-        print_r($changes['0.1']);
+        foreach ($changes as $version => $features) {
+            echo '
+                    <div class="row odstep">
+                        <div class="col-md-6">
+                            <div class="dane-osobowe kafelek brazowy">
+                                <p>Wersja: ' . $version . '</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="dane-osobowe kafelek bialy">';
+
+            foreach ($features as $row) {
+                echo '<p>' . $row['opis'] . '</p> ';
+            }
+
+            echo '</div></div></div>';
+        }
     }
 }
 ?>
