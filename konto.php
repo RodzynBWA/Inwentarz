@@ -79,7 +79,7 @@
         <div class="row odstep">
             <div class="col-md-12">
                 <div class="admin-inwentarza kafelek czerwony">
-                    <p>W razie chęci zmiany informacji na temat twojego profilu, należy skontaktować się z administatorem inwentarza <br>p.
+                    <p>W razie zmiany informacji zawartych w twoim profilu, należy skontaktować się z administatorem inwentarza <br>p.
                         <?php
                             echo $inwentarz->admin_inwentarza();
                         ?></p>
