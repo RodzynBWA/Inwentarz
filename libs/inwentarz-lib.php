@@ -132,9 +132,12 @@
                 $user_id = $_SESSION['uzytkownik_id'];
             }
 
+            var_dump($user_id);
+
             $query = $baza->prepare('SELECT * FROM `uzytkownicy` WHERE `id`=:id LIMIT 1');
             $query->bindParam(':id', $user_id, PDO::PARAM_INT);
-            return $query->execute();
+            $query->execute();
+            var_dump($query->fetch()); die;
         }
 
         public function changelog() {

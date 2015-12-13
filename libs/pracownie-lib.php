@@ -4,11 +4,8 @@
         public function iloscPracowni() {
             require('dbconnect.php');
 
-            $ile_pracownii = "SELECT id FROM listapracownii";
-            $pobierz_ilosc = mysqli_query($polaczenie, $ile_pracownii);
-
-            $ilosc = mysqli_num_rows($pobierz_ilosc);
-
+            $ile_pracownii = $baza->query('SELECT id FROM listapracownii');
+            $ilosc = $ile_pracownii->rowCount();
             return $ilosc;
         }
 
