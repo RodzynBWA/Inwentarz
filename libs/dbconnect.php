@@ -4,5 +4,11 @@
 	$password = 'ptakilatajakluczem';
 	$database = 'Inwentarz';
 
-	$polaczenie = new mysqli($mysql_host, $username, $password, $database);
+	try {
+		$baza = new PDO("mysql:host=$mysql_host;dbname=$database", $username, $password);
+		$baza->query('SET NAMES utf8');
+	}
+	catch(PDOException $e) {
+		echo $e->getMessage();
+	}
 ?>
