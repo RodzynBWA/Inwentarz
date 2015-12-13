@@ -1,5 +1,5 @@
 <?php require('header.php'); ?>
-    <div class="container oddziel">
+    <div id="changelog" class="container oddziel">
         <div class="row odstep">
             <div class="col-md-12">
                 <div class="changelog kafelek czerwony">

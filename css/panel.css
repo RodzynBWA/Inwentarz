@@ -119,6 +119,19 @@ body #konto .admin-inwentarza p {
   font-size: 20px;
   padding-top: 28px;
 }
+body #changelog .wersja-changelogu p {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 35px;
+}
+body #changelog .wpis-changelogu p {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 18px;
+}
+body #changelog .wpis-changelogu p:first-of-type {
+  padding-top: 22px;
+}
 body .informacje-o-projekcie {
   background-color: #ffffff;
   padding-bottom: 15px;
@@ -136,7 +149,7 @@ body .informacje-o-projekcie p {
   padding: 5px 10px;
 }
 body .kafelek {
-  height: 99px;
+  min-height: 99px;
 }
 body .brazowy {
   background-color: #353535;

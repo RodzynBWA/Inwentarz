@@ -129,6 +129,28 @@ body {
     }
   }
 
+  //Changelog
+  #changelog {
+    .wersja-changelogu {
+      p {
+        text-align: center;
+        font-size:20px;
+        padding-top:35px;
+      }
+    }
+
+    .wpis-changelogu {
+      p {
+          text-align:center;
+          margin-bottom: 8px;
+          font-size: 18px;
+        &:first-of-type {
+          padding-top: 22px;
+        }
+      }
+    }
+  }
+
   // Informacje o projekcie
   .informacje-o-projekcie {
     background-color:rgba(255,255,255,1);
@@ -154,7 +176,7 @@ body {
   // Kafelki
 
   .kafelek {
-    height:99px;
+    min-height:99px;
   }
 
   // Kolory kafelek

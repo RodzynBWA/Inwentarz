@@ -129,9 +129,10 @@ class Inwentarz {
 
     public function changelog() {
         require('dbconnect.php');
-        $data = $polaczenie->query('SELECT * FROM changelog');
+        $data = $polaczenie->query('SELECT * FROM changelog ORDER BY `changelog`.`wersja` DESC');
 
         $changes = [];
+
         foreach ($data as $row) {
             $changes[$row['wersja']][] = $row;
         }
@@ -140,15 +141,15 @@ class Inwentarz {
             echo '
                     <div class="row odstep">
                         <div class="col-md-6">
-                            <div class="dane-osobowe kafelek brazowy">
+                            <div class="wersja-changelogu kafelek brazowy">
                                 <p>Wersja: ' . $version . '</p>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="dane-osobowe kafelek bialy">';
+                            <div class="wpis-changelogu kafelek bialy">';
 
             foreach ($features as $row) {
-                echo '<p>' . $row['opis'] . '</p> ';
+                echo '<p> - ' . $row['opis'] . '</p> ';
             }
 
             echo '</div></div></div>';
