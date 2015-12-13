@@ -141,12 +141,16 @@ body .informacje-o-projekcie h1 {
   text-align: center;
 }
 body .informacje-o-projekcie h2 {
+  padding-top: 5px;
   text-align: center;
 }
 body .informacje-o-projekcie p {
   font-size: 14px;
   text-align: justify;
   padding: 5px 10px;
+}
+body .informacje-o-projekcie ul li {
+  font-size: 14px;
 }
 body .kafelek {
   min-height: 99px;

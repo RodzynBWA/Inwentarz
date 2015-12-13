@@ -15,6 +15,10 @@
                         Aplikacja webowa jaką jest inwentarz sprzętu komputerowego została stworzona z myślą o placówkach szkolnych, w celu łatwiejszego zarządzania daną pracownią komputerową w szkole, firmie czy instytucji rządowej.
                         Projekt jest w trakcie ciągłego rozwoju oraz testów, w celu zwiększeniu wydajności, bezpieczeństwa oraz funkcjonalności.
                     </p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="informacje-o-projekcie">
                     <h2>Podzespoły stacji roboczej</h2>
                     <p>W chwili obecnej, aplikacja umożliwia podgląd wymienionych elementów stanowiska komputerowego:</p>
                     <ul>
@@ -25,6 +29,10 @@
                         <li>zasilacz</li>
                         <li>karta graficzna</li>
                     </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="informacje-o-projekcie">
                     <h2>Technologie wykorzystane w aplikacji</h2>
                     <p>Przy tworzeniu inwentarza, zostały wykorzystane takie technologie jak:</p>
                     <ul>
