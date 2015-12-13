@@ -10,10 +10,6 @@
             $ilosc = mysqli_num_rows($pobierz_ilosc);
 
             return $ilosc;
-
-            mysqli_free_result($pobierz_ilosc);
-
-            mysqli_close();
         }
 
         public function listaPracowni() {
