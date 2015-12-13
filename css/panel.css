@@ -415,32 +415,32 @@ body .cd-top {
   -moz-transition: opacity .3s 0s, visibility 0s .3s;
   transition: opacity .3s 0s, visibility 0s .3s;
 }
-body .cd-top .cd-is-visible,
-body .cd-top .cd-fade-out,
-.no-touch body .cd-top:hover {
+body .cd-is-visible,
+body .cd-fade-out,
+.no-touch body:hover {
   -webkit-transition: opacity .3s 0s, visibility 0s 0s;
   -moz-transition: opacity .3s 0s, visibility 0s 0s;
   transition: opacity .3s 0s, visibility 0s 0s;
 }
-body .cd-top .cd-is-visible {
-  visibility: visible;
-  opacity: 1;
+body .cd-is-visible {
+  visibility: visible !important;
+  opacity: 1 !important;
 }
-body .cd-top .cd-fade-out {
+body .cd-fade-out {
   opacity: .5;
 }
-.no-touch body .cd-top:hover {
+.no-touch body:hover {
   background-color: #e86256;
   opacity: 1;
 }
 @media only screen and (min-width: 768px) {
-  body .cd-top .cd-top {
+  body .cd-top {
     right: 20px;
     bottom: 20px;
   }
 }
 @media only screen and (min-width: 1024px) {
-  body .cd-top .cd-top {
+  body .cd-top {
     height: 60px;
     width: 60px;
     right: 30px;

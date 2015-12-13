@@ -320,16 +320,17 @@ body {
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
     -moz-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
+  }
 
-    .cd-is-visible, .cd-fade-out, .no-touch &:hover {
+  .cd-is-visible, .cd-fade-out, .no-touch &:hover {
       -webkit-transition: opacity .3s 0s, visibility 0s 0s;
       -moz-transition: opacity .3s 0s, visibility 0s 0s;
       transition: opacity .3s 0s, visibility 0s 0s;
     }
 
     .cd-is-visible {
-      visibility: visible;
-      opacity: 1;
+      visibility: visible !important;
+      opacity: 1 !important;
     }
 
     .cd-fade-out {
@@ -357,4 +358,3 @@ body {
       }
     }
   }
-}
